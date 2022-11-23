@@ -1,0 +1,17 @@
+<table class="table">
+    <tbody>
+      <h3 class="d-flex justify-content-between">
+        The Colors
+        <!-- <button type="submit" class="btn btn-outline-primary" routerLink="brand-add">
+          Renk Ekle
+        </button> -->
+      </h3>
+      <div class="col-md-12">
+        <input type="text" placeholder="Renk arayın..." class="form-control" id="brandFilter" >
+      </div>
+      <tr (click)="selectColor(color)" routerLink="/color/{{ color.id}}" *ngFor="let color of colors">
+        <td class="d-flex justify-content-between">{{color.name}} </td>
+    </tr>
+    </tbody>
+  </table>
+  
